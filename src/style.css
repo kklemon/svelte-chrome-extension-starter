@@ -1,0 +1,51 @@
+/*
+  Global CSS file to be imported in every root script of the extension
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+code {
+  @apply font-mono bg-stone-200 p-1 py-0.5 rounded-md -my-1;
+}
+
+p {
+  @apply text-justify pb-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold;
+}
+
+h1 {
+  @apply text-center font-semibold text-4xl my-8;
+}
+
+h2 {
+  @apply text-3xl mb-2 mt-4;
+}
+
+h3 {
+  @apply text-2xl my-2;
+}
+
+a {
+  @apply text-blue-800 hover:underline;
+}
+
+button {
+  border: none;
+}
